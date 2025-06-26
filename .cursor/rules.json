@@ -1,0 +1,12 @@
+[
+  "Each React component must be in its own file",
+  "CSS Modules should be colocated",
+  "Prefer interfaces for prop typing",
+  "Keep utility functions isolated in /utils",
+  "Type all API responses explicitly",
+  "No hard-coded styles; use CSS Modules",
+  "Components must be pure functional components",
+  "Every component must have a corresponding test",
+  "Tests must cover at least 70% of component branches",
+  "Test user interactions and edge cases"
+] 
