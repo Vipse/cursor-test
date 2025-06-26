@@ -23,24 +23,39 @@ This is a React-based frontend application, structured for scalability and maint
 
 ```
 home-work-cursor/
-├── public/                # Static assets
-├── src/                   # Source code
-│   ├── assets/            # Images and static assets
-│   ├── components/        # Reusable React components
-│   ├── styles/            # Global and modular CSS
-│   ├── tests/             # Unit and integration tests
-│   ├── types/             # TypeScript type definitions
-│   ├── utils/             # Utility functions (e.g., API calls)
-│   ├── App.tsx            # Main App component
-│   ├── main.tsx           # Entry point
-│   └── vite-env.d.ts      # Vite environment types
-├── coverage/              # Test coverage reports
-├── package.json           # Project metadata and scripts
-├── tsconfig*.json         # TypeScript configuration
-├── vite.config.ts         # Vite configuration
-├── vitest.config.ts       # Vitest configuration
-└── README.md              # Project documentation
+├── coverage/                  # Test coverage reports
+│   └── src/                   # Coverage for source files
+├── public/                    # Static assets (e.g., vite.svg)
+├── src/                       # Source code
+│   ├── assets/                # Images and static assets (e.g., react.svg)
+│   ├── components/            # Reusable React components
+│   │   ├── Spinner/           # Spinner component and styles
+│   │   ├── UserModal/         # UserModal component and styles
+│   │   ├── UserRow/           # UserRow component
+│   │   └── UserTable/         # UserTable component and styles
+│   ├── styles/                # (Reserved for global styles)
+│   ├── tests/                 # Unit and integration tests
+│   ├── types/                 # TypeScript type definitions (e.g., user.ts)
+│   ├── utils/                 # Utility functions (e.g., api.ts)
+│   ├── App.tsx                # Main App component
+│   ├── main.tsx               # Entry point
+│   └── vite-env.d.ts          # Vite environment types
+├── .eslintrc.js / eslint.config.js # ESLint configuration
+├── package.json               # Project metadata and scripts
+├── tsconfig*.json             # TypeScript configuration
+├── vite.config.ts             # Vite configuration
+├── vitest.config.ts           # Vitest configuration
+└── README.md                  # Project documentation
 ```
+
+---
+
+## Responsive Design
+
+This project is fully responsive:
+- All main components (UserTable, UserModal, Spinner) adapt to mobile, tablet, and desktop screens.
+- CSS media queries ensure tables, modals, and overlays look great on all devices.
+- The modal is centered and never touches the screen edges on mobile.
 
 ---
 
